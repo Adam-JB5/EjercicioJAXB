@@ -2,17 +2,17 @@
 <ies nombre="Ataulfo Argenta" localidad="Castro Urdiales">
     <direccion tipo="provisional">
         <director>Director1</director>
-        <jefeEstudios tipo="principal">Juan JE1</jefeEstudios>
-        <jefeEstudios tipo="principal">Juan JE2</jefeEstudios>
+        <jefe_estudios tipo="principal">Juan JE1</jefe_estudios>
+        <jefe_estudios tipo="principal">Juan JE2</jefe_estudios>
     </direccion>
     <grupo curso="3" etapa="ESO">
-        <alumnos sexo="masculino">Juan1</alumnos>
-        <alumnos sexo="masculino">Juan2</alumnos>
+        <alumno sexo="masculino">Juan1</alumno>
+        <alumno sexo="masculino">Juan2</alumno>
         <tutor>Tutor1</tutor>
     </grupo>
     <grupo curso="4" etapa="ESO">
-        <alumnos sexo="femenino">Clara1</alumnos>
-        <alumnos sexo="femenino">Clara2</alumnos>
+        <alumno sexo="femenino">Clara1</alumno>
+        <alumno sexo="femenino">Clara2</alumno>
         <tutor>Tutor2</tutor>
     </grupo>
 </ies>

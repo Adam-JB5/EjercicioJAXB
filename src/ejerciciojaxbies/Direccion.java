@@ -25,7 +25,6 @@ public class Direccion {
     private String tipo;
     @XmlElement
     private Director director;
-    @XmlElementRef
     private ArrayList<JefeEstudios> jefesEstudios = new ArrayList();
     
     public Direccion() {
@@ -58,6 +57,12 @@ public class Direccion {
     public void setDirector(Director director) {
         this.director = director;
     }
+
+    @XmlElement(name="jefe_estudios")
+    public ArrayList<JefeEstudios> getJefesEstudios() {
+        return jefesEstudios;
+    }
+    
 
     public void annadirJefesEstudio(JefeEstudios jefeEstudio) {
         jefesEstudios.add(jefeEstudio);

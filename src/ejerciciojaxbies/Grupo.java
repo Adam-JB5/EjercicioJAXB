@@ -64,7 +64,7 @@ public class Grupo {
         this.tutor = tutor;
     }
 
-    @XmlElement
+    @XmlElement(name = "alumno")
     public ArrayList<Alumno> getAlumnos() {
         return alumnos;
     }
