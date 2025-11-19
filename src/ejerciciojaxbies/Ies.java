@@ -9,17 +9,22 @@ package ejerciciojaxbies;
 import java.util.ArrayList;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlElementRefs;
 import javax.xml.bind.annotation.XmlMixed;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
  * @author DAM209
  */
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement
 public class Ies {
+    @XmlAttribute
     private String nombre;
+    @XmlAttribute
     private String localidad;
     @XmlMixed
     @XmlElementRefs({
@@ -32,12 +37,19 @@ public class Ies {
     public Ies() {
         
     }
+    
+    public Ies(String nombre, String localidad) {
+        this.nombre = nombre;
+        this.localidad = localidad;
+    }
 
     public Ies(String nombre, String localidad, ArrayList<Object> direccionesGrupos) {
         this.nombre = nombre;
         this.localidad = localidad;
         this.direccionesGrupos = direccionesGrupos;
     }
+    
+    
 
     public String getNombre() {
         return nombre;
@@ -55,13 +67,11 @@ public class Ies {
         this.localidad = localidad;
     }
 
-    public ArrayList<Object> getDireccionesGrupos() {
-        return direccionesGrupos;
+    public void annadirDireccionGrupo(Object direccionGrupo) {
+        direccionesGrupos.add(direccionGrupo);
     }
 
-    public void setDireccionesGrupos(ArrayList<Object> direccionesGrupos) {
-        this.direccionesGrupos = direccionesGrupos;
-    }
+    
     
     
 

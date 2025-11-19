@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ies nombre="Ataulfo Argenta" localidad="Castro Urdiales">
+    <direccion tipo="provisional">
+        <director>Director1</director>
+        <jefeEstudios tipo="principal">Juan JE1</jefeEstudios>
+        <jefeEstudios tipo="principal">Juan JE2</jefeEstudios>
+    </direccion>
+    <grupo curso="3" etapa="ESO">
+        <alumnos sexo="masculino">Juan1</alumnos>
+        <alumnos sexo="masculino">Juan2</alumnos>
+        <tutor>Tutor1</tutor>
+    </grupo>
+    <grupo curso="4" etapa="ESO">
+        <alumnos sexo="femenino">Clara1</alumnos>
+        <alumnos sexo="femenino">Clara2</alumnos>
+        <tutor>Tutor2</tutor>
+    </grupo>
+</ies>

@@ -5,35 +5,21 @@
  */
 package ejerciciojaxbies;
 
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlValue;
 
 /**
  *
  * @author DAM209
  */
-public class Alumno {
+public class Director {
     private String nombre;
-    private String sexo;
     
-
-    public Alumno() {
+    public Director() {
         
     }
     
-    public Alumno(String nombre, String sexo) {
+    public Director(String nombre) {
         this.nombre = nombre;
-        this.sexo = sexo;
-        
-    }
-
-    @XmlAttribute
-    public String getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
     }
 
     @XmlValue
